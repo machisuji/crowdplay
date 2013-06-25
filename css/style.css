@@ -1,0 +1,94 @@
+html {
+  overflow: auto;
+}
+
+body {
+    padding: 10px;
+}
+
+body h1 {
+    margin-top: 0px;
+}
+
+#select-playlist-panel .ui-panel {
+    width: 300px;
+}
+
+#tracks, ul.tracks {
+    list-style-type: none;
+}
+
+#tracks li, .tracks li {
+    list-style-type: none;
+}
+
+.cover {
+    width: 42px;
+    float: left;
+    margin-right: 10px;
+}
+
+.actions {
+    display: block;
+    float: right;
+}
+
+.name {
+    display: block;
+    float: left;
+}
+
+.title {
+    margin-top: 5px;
+    display: block;
+    font-size: 120%;
+    color: black;
+}
+
+.artist {
+    display: block;
+    font-size: 90%;
+    color: #888;
+}
+
+button.utf-icon {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+button.pro:disabled {
+    color: #888;
+}
+
+button.contra:disabled {
+    color: #888;
+}
+
+.pro, button.pro.selected:disabled {
+    color: forestgreen;
+}
+
+.contra, button.contra.selected:disabled {
+    color: red;
+}
+
+.success {
+    background-color: #c0ffc0 !important;
+}
+
+.fail {
+    background-color: #ffc0c0 !important;
+}
+
+button img {
+    width: 32px;
+    height: 32px;
+}
+
+button:disabled img {
+    opacity: 0.5;
+}
+
+button.selected:disabled img {
+    opacity: 1;
+}

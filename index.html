@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>The name of the app</title>
+    <!-- Include the stylesheets you need for the Views components -->
+    <!-- See https://developer.spotify.com/technologies/apps/docs/preview/views/ -->
+    <link rel="stylesheet" href="$views/css/image.css">
+    <link rel="stylesheet" href="$views/css/list.css">
+    <link rel="stylesheet" href="$views/css/buttons.css">
+    <!-- <link rel="stylesheet" href="$views/css/throbber.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css">
+    <!-- If you are using the preview SDK for webplayer then uncomment the script below -->
+    <!--script src="http://d1hza3lyffsoht.cloudfront.net/preview-sdk/bootstrap.js"></script-->
+    <script type="text/javascript" src="scripts/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.mobile-1.3.1.min.js"></script>
+</head>
+<body>
+
+<div id="main-page" data-role="page">
+
+    <header data-role="header">
+        <h1>Crowd Play ♫</h1>
+    </header>
+
+    <div data-role="content">
+
+        <section id="player" data-role="collapsible" data-collapsed="false">
+            <h1>Player</h1>
+
+
+            <select id="playlists">
+                <option value="null" selected>-- select playlist --</option>
+            </select>
+
+            <div class="controls">
+
+                <label>Server-URI</label>
+
+                <input type="text" id="serverUri" data-inline="true"
+                       name="serverUri" value="http://localhost:8004/crowdcontrol.php">
+            </div>
+
+            <h2>Current Song</h2>
+
+            <ul id="currentTracks" class="tracks currentSong" data-role="listview" data-inset="true">
+                <li>-- select a playlist first --</li>
+            </ul>
+
+            <button id="pauseButton" data-role="button" data-inline="true">Pause</button>
+            <button id="skipButton" data-role="button" data-inline="true">Skip Song</button>
+
+        </section>
+
+        <section id="playlist" data-role="collapsible" data-collapsed="false" data-inset="true">
+
+            <h1>Tracks</h1>
+
+            <ul id="tracks" data-role="listview" data-filter="true">
+                <li>-- select a playlist first --</li>
+            </ul>
+
+        </section>
+
+    </div>
+
+</div>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>
