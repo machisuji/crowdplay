@@ -18,11 +18,15 @@ Usage
 -----
 
 The app consists of two parts: The player in form of a Spotify App, and an independent web interface
-for people to vote on tracks and see what's currently playing. 
+for people to vote on tracks and see what's currently playing.
+
+![Spotify App](https://raw.github.com/Bunkerbewohner/crowdplay/master/screenshots/spotify-app.png)
 
 To use the player just copy the crowdplay folder into the Spotify app of your home folder (on Windows 
 for example: "%USERPROFILE%\Documents\Spotify") and start the app from spotify by typing "spotify:app:crowdplay"
 into the search bar, or alternatively use the "Spotify-App" button in the web interface of CrowdPlay.
+
+![Web Interface](https://raw.github.com/Bunkerbewohner/crowdplay/master/screenshots/web-interface.png)
 
 To use the web interface just start the "server.bat" file in the app folder, which will try to start 
 the integrated PHP development server using the command "php -S 0.0.0.0:8004". Then point your browser
