@@ -223,7 +223,8 @@ require([
             name: t.name,
             artist: t.artists[0].name,
             upvotes: upvotes,
-            downvotes: downvotes
+            downvotes: downvotes,
+            duration: t.duration
         };
     }
 

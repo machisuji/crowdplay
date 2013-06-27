@@ -106,6 +106,10 @@ function update(result) {
     tracks = result.tracks;
     playlist.name = result.name;
 
+    var currentTrack = result.current_track;
+    var currentDisplay = $("#currentTracks .title").text();
+    if (currentTrack.name == currentDisplay) return;
+
     showPlaylist();
 
     // show currently playing
